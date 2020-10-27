@@ -6,14 +6,28 @@ const assertEqual = (actual, expected) => {
   }
 };
 
+// const eqArrays = (arr1, arr2) => {
+//   let results = arr1.length === arr2.length;
+//   if (results === false) {
+//     return false;
+//   } else {
+//     for (let i = 0; i < arr1.length; i++) {
+//       results === true ? (results = arr1[i] === arr2[i]) : (results = false);
+//     }
+//   }
+//   return results;
+// };
+
 const eqArrays = (arr1, arr2) => {
-  let results = true;
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
   for (let i = 0; i < arr1.length; i++) {
-    for (let j = 0; j < arr2.length; j++) {
-      arr1[i] === arr2[j] ? (results = true) : (results = false);
+    if (arr1[i] !== arr2[i]) {
+      return false;
     }
   }
-  return results;
+  return true;
 };
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
@@ -23,3 +37,4 @@ assertEqual(eqArrays(['1', '2', '3'], ['1', '2', '3']), true); // => true
 assertEqual(eqArrays(['1', '2', '3'], ['1', '2', 3]), false); // => false
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+assertEqual(eqArrays([1, 2, 3], [2, 3, 3]), false); // => fail
