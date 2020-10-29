@@ -1,10 +1,10 @@
-const assertEqual = (actual, expected) => {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion Passed: [${actual}] === [${expected}]`);
-  } else {
-    console.log(`🛑🛑🛑Assertion Failed: [${actual}] !== [${expected}]`);
-  }
-};
+// const assertEqual = (actual, expected) => {
+//   if (actual === expected) {
+//     console.log(`✅✅✅Assertion Passed: [${actual}] === [${expected}]`);
+//   } else {
+//     console.log(`🛑🛑🛑Assertion Failed: [${actual}] !== [${expected}]`);
+//   }
+// };
 
 const eqArrays = (arr1, arr2) => {
   if (arr1.length !== arr2.length) {
@@ -36,16 +36,16 @@ const eqObjects = (obj1, obj2) => {
 
 const ab = { a: '3', b: '4', c: '3' };
 const ba = { b: '4', a: '3' };
-const obj = { c: '7', a: '8' };
+// const obj = { c: '7', a: '8' };
 
-// console.log(eqObjects(ab, ba)); //false
+console.log(eqObjects(ab, ba)); //false
 // console.log(eqObjects(ab, ab)); //true
 // console.log(eqObjects(ba, ba)); //true
 // console.log(eqObjects(obj, ba)); //false
 
-const cd = { c: '1', d: ['2', 3] };
-const dc = { d: ['2', 3], c: '1' };
-console.log(eqObjects(cd, dc)); // => true
+// const cd = { c: '1', d: ['2', 3] };
+// const dc = { d: ['2', 3], c: '1' };
+// console.log(eqObjects(cd, dc)); // => true
 
-const cd2 = { c: '1', d: ['2', 3, 4] };
-console.log(eqObjects(cd, cd2)); // => false
+// const cd2 = { c: '1', d: ['2', 3, 4] };
+// console.log(eqObjects(cd, cd2)); // => false

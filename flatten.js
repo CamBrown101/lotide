@@ -28,7 +28,7 @@
 
 const flatten = (arr) => {
   const newArray = [];
-  for (i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (Array.isArray(arr[i])) {
       for (let j = 0; j < arr[i].length; j++) {
         newArray.push(arr[i][j]);
@@ -40,3 +40,5 @@ const flatten = (arr) => {
 
   return newArray;
 };
+
+console.log(flatten([1, [1, 2]]));
