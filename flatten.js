@@ -30,7 +30,7 @@ const flatten = (arr) => {
   const newArray = [];
   for (i = 0; i < arr.length; i++) {
     if (Array.isArray(arr[i])) {
-      for (j = 0; j < arr[i].length; j++) {
+      for (let j = 0; j < arr[i].length; j++) {
         newArray.push(arr[i][j]);
       }
     } else {

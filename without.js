@@ -29,7 +29,7 @@ const eqArrays = (arr1, arr2) => {
 const without = (source, itemsToRemove) => {
   const newArray = [...source];
   let indexToRemove;
-  for (i = 0; i < itemsToRemove.length; i++) {
+  for (let i = 0; i < itemsToRemove.length; i++) {
     indexToRemove = newArray.indexOf(itemsToRemove[i]);
     if (indexToRemove > -1) {
       newArray.splice(indexToRemove, 1);

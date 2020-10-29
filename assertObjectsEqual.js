@@ -18,7 +18,7 @@ const assertObjectsEqual = (actual, expected) => {
     );
     return false;
   }
-  for (key of Object.keys(actual)) {
+  for (let key of Object.keys(actual)) {
     if (Array.isArray(actual[key]) && Array.isArray(expected[key])) {
       if (!eqArrays(actual[key], expected[key])) {
         console.log(
