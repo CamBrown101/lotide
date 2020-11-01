@@ -35,7 +35,7 @@ const eqObjects = (obj1, obj2) => {
     for (const [key, value] of Object.entries(obj1)) {
       //check to see if any of those values are objects
       if (typeof value === "object") {
-        //if a value is an object call recall the eqObjects function again and start again
+        //if a value is an object, recall the eqObjects function again and start again
         if (!eqObjects(obj1[key], obj2[key])) return false;
       } else {
         // if not an object check to see if the keys from the two objects match
