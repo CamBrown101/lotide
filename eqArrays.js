@@ -22,19 +22,6 @@ const eqArrays = (arr1, arr2) => {
 };
 
 assertEqual(eqArrays(["1", 2, [3, 2, [2, 1]]], [1, 2, [3, 2, [2, 1]]]), false); // => true
-// //loop through the keys and values of one of the objects
-// for (const [key, value] of Object.entries(obj1)) {
-//   //check to see if any of those values are objects
-//   if (typeof value === "object") {
-//     //if a value is an object, recall the eqObjects function again and start again
-//     if (!eqObjects(obj1[key], obj2[key])) return false;
-//   } else {
-//     // if not an object check to see if the keys from the two objects match
-//     if (obj1[key] !== obj2[key]) return false;
-//   }
-
-// }
-
 
 // assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
 
