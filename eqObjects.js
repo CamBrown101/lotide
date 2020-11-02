@@ -74,3 +74,6 @@ console.log(eqObjects({ a: 1, b: [2] }, { a: 1, b: { 0: 2 } })); // =>false
 
 // const cd2 = { c: '1', d: ['2', 3, 4] };
 // console.log(eqObjects(cd, cd2)); // => false
+
+
+module.exports = eqObjects;

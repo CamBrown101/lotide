@@ -42,3 +42,6 @@ const flatten = (arr) => {
 };
 
 console.log(flatten([1, [1, 2]]));
+
+
+module.exports = flatten;

@@ -27,3 +27,5 @@ console.log(
     (k, v) => v.stars === 2
   )
 );
+
+module.exports = findKey;

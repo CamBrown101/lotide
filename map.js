@@ -43,3 +43,6 @@ assertArraysEqual(
   map(arrOfArr, (word) => word[0]),
   [1, 1]
 );
+
+
+module.exports = map;
